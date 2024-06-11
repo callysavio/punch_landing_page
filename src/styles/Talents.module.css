@@ -1,0 +1,150 @@
+#talentsSection{
+     background-color: rgba(237, 239, 255, 1); 
+     padding-top: 50px; 
+     padding-bottom: 60px;
+}
+
+#talentsHeading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+  width: 68%;
+  margin: 50px auto;
+}
+
+#talentsContainer {
+  width: 90%;
+  display: flex; 
+  flex-flow: column wrap;
+  gap: 40px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.talentsContainer1 {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.talentsLeft {
+  width: 35%;
+  padding-top: 20px;
+}
+
+.talentsPara {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: left;
+}
+
+.talentsUl {
+  line-height: 40px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+.talentsUl li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.exploreIcon {
+  width: 74px;
+  height: 74px;
+  padding: 0px 24px 0px 25px;
+  gap: 0px;
+  border-radius: 30px;
+  opacity: 0px;
+  background-color: rgba(32, 34, 41, 1);
+}
+
+.talentsContainer2 {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.talentsRight {
+  width: 55%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 7px;
+  padding-bottom: 35px;
+  padding-top: 30px;
+}
+
+.talentsContainer3 {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 305px;
+}
+
+.exploreHolder{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.exploreMore{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+}
+
+.exploreMore:hover{
+    cursor: pointer;
+}
+
+/* Talents and their icons */
+.tHeading{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23.78px;
+        text-align: left;
+        margin-left: 26px;
+        color: rgba(32, 34, 41, 1);
+}
+
+
+#talents{
+    width: 93%;
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.talentImg{
+        width: 80px;
+        height: 80px;
+        padding: 22px 22px 22px 23px;
+        border-radius: 74px;
+        opacity: 0px;
+        background-color: rgba(246, 246, 246, 1);
+}
+
+.talentImg2{
+  border-radius: 30px;
+}
+
+.tTitle{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: center;
+}

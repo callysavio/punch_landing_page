@@ -1,0 +1,67 @@
+#mainSection{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+#heading{
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: left;
+}
+
+#paragraph{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        color: rgba(30, 21, 21, 0.8);
+        margin-top: 25px;
+}
+
+#steps{
+    width: 50%;
+    margin-top: 35px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.steps{
+       
+        border-radius: 7px;
+        border: 1px solid lightgrey;
+        opacity: 0px;
+        padding: 10px 20px;
+}
+
+.steps:hover{
+    cursor: pointer;
+}
+
+.step{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.stepIcon{
+        background-color: rgba(236, 236, 236, 1);
+        border-radius: 43.94px;
+        opacity: 0px;
+        padding: 20px;
+}
+
+.sPara2{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        margin-top: 20px;
+        width: 100%;
+        display: none;
+}
