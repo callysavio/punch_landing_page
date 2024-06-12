@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/HeroSection.module.css";
-import searchIcon from "../assets/images/search_icon.svg";
+import searchIcon from "../assets/images/search.svg";
 
 const HeroSection = () => {
   return (
