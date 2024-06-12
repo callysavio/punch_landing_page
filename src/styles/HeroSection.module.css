@@ -80,8 +80,15 @@
 @media (max-width: 750px) {
   .heroPara,
   #heroSearchHolder {
-    width: 80%;
+    width: 90%;
   }
+
+    #heroSearchIcon {
+      width: 54px;
+      height: 54px;
+      left: 496px;
+      padding: 0px 15px 0px 16px;
+    }
 }
 
 @media(max-width: 600px){
@@ -105,9 +112,23 @@
       }
   
       .heroPara {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 30px;
         width: 90%;
       }
     }
+}
+
+@media(max-width: 250px){
+    #heroHeading {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 190px;
+      }
+
+            #heroIcon {
+              width: 48px;
+              height: 33px;
+              top: 293px;
+            }
 }

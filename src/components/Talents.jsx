@@ -154,7 +154,9 @@ const Talents = () => {
             <p className={styles.exploreMore}>Explore More</p>
           </div>
           <div>
-            <b>30 more</b> to explore
+            <p className={styles.thirtyMore}>
+              <b>30 more</b> to explore
+            </p>
           </div>
         </div>
       </div>

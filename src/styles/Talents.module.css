@@ -236,13 +236,13 @@
     flex-flow: column nowrap;
   }
 
-  #talents{
+  #talents {
     flex-flow: row wrap;
     justify-content: flex-start;
   }
-    .talentsContainer2 {
-      flex-flow: column nowrap;
-    }
+  .talentsContainer2 {
+    flex-flow: column nowrap;
+  }
 
   .talentsLeft {
     width: 100%;
@@ -252,29 +252,28 @@
     width: 100%;
   }
 
-    .talentsUl {
-      justify-content: flex-start;
-      gap: 20px;
-    }
-  
-    .talentsUl li {
-      display: flex;
-      align-items: center;
-    }
+  .talentsUl {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .talentsUl li {
+    display: flex;
+    align-items: center;
+  }
 }
 
-
-@media(max-width: 600px){
+@media (max-width: 600px) {
   #talentsHeading {
-      font-size: 40px;
-      line-height: 54px;
-      width: 90%;
-      margin: 40px auto;
-    }
+    font-size: 40px;
+    line-height: 54px;
+    width: 90%;
+    margin: 40px auto;
+  }
 
-            #talentsContainer {
-              width: 90%;
-            }
+  #talentsContainer {
+    width: 90%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -295,43 +294,92 @@
   }
 }
 
-@media(max-width: 500px){
-  #talents{
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      gap: 10px;
-      margin-top: 10px;
+@media (max-width: 500px) {
+  #talents {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-    .tTitle {
-      font-size: 13px;
-    }
+  .tTitle {
+    font-size: 13px;
+  }
 
-        .talent{
-          margin-top: 20px;
-        }
+  .talent {
+    margin-top: 20px;
+  }
 }
 
-@media(max-width: 450px){
+@media (max-width: 450px) {
   .talentsContainer3 {
-      gap: 50px;
-    }
+    gap: 50px;
+  }
 
-        .exploreMore{
-          font-size: 15px;
-        }
+  .exploreMore {
+    font-size: 15px;
+  }
 }
 
-@media(max-width: 400px){
+@media (max-width: 400px) {
   #talentsHeading {
-      font-size: 35px;
-      line-height: 44px;
-      width: 90%;
-      margin: 20px auto;
-      text-align: left;
-    }
+    font-size: 35px;
+    line-height: 44px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+  }
 
-        #talentsContainer {
-          margin-top: 40px;
-        }
+  #talentsContainer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .talentsContainer3 {
+    gap: 20px;
+  }
+
+  .exploreIcon {
+    width: 50px;
+    height: 50px;
+    padding: 0px 15px 0px 16px;
+  }
+
+  .exploreMore {
+    font-size: 15px;
+  }
+
+  .thirtyMore {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 250px) {
+  #talentsHeading {
+    font-size: 25px;
+    line-height: 24px;
+    margin-top: -20px;
+  }
+
+  #talentsContainer {
+    margin-top: 10px;
+  }
+
+  .talentsPara {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .talentsUl {
+    gap: 0px;
+  }
+
+  #talents {
+    flex-flow: column wrap;
+  }
+
+  .talentsContainer3 {
+    flex-flow: column wrap;
+  }
 }
