@@ -71,7 +71,7 @@ const RecruitmentSteps = () => {
           <div className={styles.step}>
             <img src={stepIcon} alt="step icon" className={styles.stepIcon} />
             <p className={styles.sPara}>
-              <b>Step 5:</b>Let's get to work
+              <b>Step 5:</b> Let's get to work
             </p>
           </div>
           <p className={styles.sPara2}>

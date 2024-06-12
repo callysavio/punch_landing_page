@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/HeroSection.module.css";
-// import heroicon from "../assets/images/hero.svg";
+import heroicon from "../assets/images/hero.svg";
 
 const HeroSection = () => {
   return (
@@ -25,11 +25,7 @@ const HeroSection = () => {
           type="text"
           placeholder="Looking for design |"
         />
-        <img
-          id={`${styles.heroSearchIcon}`}
-          alt="searchicon"
-          src="https://punch-landing-page-flame.vercel.app/static/media/hero.42c4cb0ed4c49fdd35c362488181d031.svg"
-        />
+        <img id={`${styles.heroSearchIcon}`} alt="searchicon" src={heroicon} />
       </div>
     </div>
   );

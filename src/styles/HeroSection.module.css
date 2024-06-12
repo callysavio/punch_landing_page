@@ -15,7 +15,6 @@
   top: 253px;
   left: 874px;
   gap: 0px;
-  opacity: 0px;
 }
 
 .heroPara {
@@ -56,7 +55,6 @@
   padding: 0px 24px 0px 25px;
   gap: 0px;
   border-radius: 15px;
-  opacity: 0px;
   background-color: rgba(255, 190, 46, 1);
 }
 
