@@ -1,7 +1,7 @@
-#talentsSection{
-     background-color: rgba(237, 239, 255, 1); 
-     padding-top: 50px; 
-     padding-bottom: 60px;
+#talentsSection {
+  background-color: rgba(237, 239, 255, 1);
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 #talentsHeading {
@@ -15,7 +15,7 @@
 
 #talentsContainer {
   width: 90%;
-  display: flex; 
+  display: flex;
   flex-flow: column wrap;
   gap: 40px;
   margin-top: 70px;
@@ -37,7 +37,7 @@
 
 .talentsPara {
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 34px;
   text-align: left;
 }
@@ -92,59 +92,243 @@
   gap: 305px;
 }
 
-.exploreHolder{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.exploreHolder {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.exploreMore{
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 18px;
-        text-align: left;
+.exploreMore {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
 }
 
-.exploreMore:hover{
-    cursor: pointer;
+.exploreMore:hover {
+  cursor: pointer;
 }
 
 /* Talents and their icons */
-.tHeading{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 23.78px;
-        text-align: left;
-        margin-left: 26px;
-        color: rgba(32, 34, 41, 1);
+.tHeading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23.78px;
+  text-align: left;
+  margin-left: 26px;
+  color: rgba(32, 34, 41, 1);
 }
 
-
-#talents{
-    width: 93%;
-    display: flex;
-    gap: 15px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+#talents {
+  width: 93%;
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.talentImg{
-        width: 80px;
-        height: 80px;
-        padding: 22px 22px 22px 23px;
-        border-radius: 74px;
-        opacity: 0px;
-        background-color: rgba(246, 246, 246, 1);
+.talentImg {
+  width: 80px;
+  height: 80px;
+  padding: 22px 22px 22px 23px;
+  border-radius: 74px;
+  opacity: 0px;
+  background-color: rgba(246, 246, 246, 1);
 }
 
-.talentImg2{
+.talentImg2 {
   border-radius: 30px;
 }
 
-.tTitle{
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 18px;
-        text-align: center;
+.tTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* media queries - responsive design */
+
+@media (max-width: 1200px) {
+  .talentsContainer3 {
+    gap: 270px;
+  }
+}
+@media (max-width: 1150px) {
+  .talentsLeft {
+    width: 30%;
+  }
+
+  .talentsRight {
+    width: 60%;
+  }
+
+  .talentsContainer3 {
+    gap: 200px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .talentsLeft {
+    width: 30%;
+  }
+
+  .talentsRight {
+    width: 65%;
+  }
+
+  .talentsContainer3 {
+    gap: 110px;
+  }
+}
+
+@media (max-width: 950px) {
+  #talentsHeading {
+    width: 80%;
+  }
+
+  #talentsContainer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  .talentImg {
+    width: 70px;
+    height: 70px;
+    padding: 18px 18px 18px 19px;
+  }
+
+  .exploreIcon {
+    width: 70px;
+    height: 70px;
+    padding: 0px 22px 0px 23px;
+  }
+
+  .talentsContainer3 {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .talentsLeft {
+    width: 25%;
+  }
+
+  .talentsRight {
+    width: 70%;
+  }
+
+  .talentsContainer3 {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  #talentsHeading {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  #talentsContainer {
+    width: 80%;
+  }
+  .talentsContainer1 {
+    flex-flow: column nowrap;
+  }
+
+    .talentsContainer2 {
+      flex-flow: column nowrap;
+    }
+
+  .talentsLeft {
+    width: 100%;
+  }
+
+  .talentsRight {
+    width: 100%;
+  }
+
+    .talentsUl {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  
+    .talentsUl li {
+      display: flex;
+      align-items: center;
+    }
+}
+
+@media(max-width: 600px){
+  #talentsHeading {
+      font-size: 40px;
+      line-height: 54px;
+      width: 90%;
+      margin: 40px auto;
+    }
+
+            #talentsContainer {
+              width: 90%;
+            }
+}
+
+@media (max-width: 550px) {
+  .talentImg {
+    width: 50px;
+    height: 50px;
+    padding: 14px 14px 14px 15px;
+  }
+
+  .exploreIcon {
+    width: 50px;
+    height: 50px;
+    padding: 0px 18px 0px 19px;
+  }
+
+  .talentsContainer3 {
+    gap: 100px;
+  }
+}
+
+@media(max-width: 500px){
+  #talents{
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+  }
+
+    .tTitle {
+      font-size: 13px;
+    }
+
+        .talent{
+          margin-top: 20px;
+        }
+}
+
+@media(max-width: 450px){
+  .talentsContainer3 {
+      gap: 50px;
+    }
+
+        .exploreMore{
+          font-size: 15px;
+        }
+}
+
+@media(max-width: 400px){
+  #talentsHeading {
+      font-size: 35px;
+      line-height: 44px;
+      width: 90%;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+        #talentsContainer {
+          margin-top: 40px;
+        }
 }

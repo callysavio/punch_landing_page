@@ -13,7 +13,7 @@ const Courses = () => {
     dispatch(setCategory(newCategory));
   };
 
-  // Split courses into three arrays, with the last containing "Explore more"
+  // Splitting courses into three arrays, with the last containing "Explore more"
   const coursesChunks = [
     courses.slice(0, 4),
     courses.slice(4, 8),

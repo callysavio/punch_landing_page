@@ -1,78 +1,135 @@
 #coursesSection {
-    width: 65%;
-    margin: 50px auto;
-    border-radius: 15px;
-    background: rgba(248, 248, 248, 1);
-    padding: 5px;
+  width: 65%;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: rgba(248, 248, 248, 1);
+  padding: 5px;
 }
 
 #coursesBtns {
-    width: 58%;
-    margin-top: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-    height: 44px;
-    border-radius: 15px;
-    display: flex;
+  width: 58%;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  height: 44px;
+  border-radius: 15px;
+  display: flex;
 }
 
 .coursesBtn {
-    font-size: 16px;
-    line-height: 23.78px;
-    text-align: center;
-    width: 50%;
-    border: none;
-    color: rgba(32, 34, 41, 1);
-    transition: background-color 0.3s;
+  font-size: 16px;
+  line-height: 23.78px;
+  text-align: center;
+  width: 50%;
+  border: none;
+  color: rgba(32, 34, 41, 1);
+  transition: background-color 0.3s;
 }
 
 .coursesBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .coursesBtn1 {
-    border-radius: 15px;
-    z-index: 2;
+  border-radius: 15px;
+  z-index: 2;
 }
 
 .coursesBtn2 {
-    background-color: inherit;
-    font-weight: 500;
-    background: rgb(236, 234, 234);
-    margin-left: -20px;
-    z-index: 1;
-    border-radius: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+  background-color: inherit;
+  font-weight: 500;
+  background: rgb(236, 234, 234);
+  margin-left: -20px;
+  z-index: 1;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .coursesBtn.active {
-    background-color: rgba(199, 244, 194, 1);
-    color: rgba(32, 34, 41, 1);
-    font-weight: 600;
+  background-color: rgba(199, 244, 194, 1);
+  color: rgba(32, 34, 41, 1);
+  font-weight: 600;
 }
 
 #coursesHolder {
-    width: 80%;
-    margin: 15px auto;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+  width: 80%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 .courses {
-    list-style-type: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    color: rgba(149, 149, 149, 1);
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(149, 149, 149, 1);
 }
 
-#bgImage{
-    width: 100%;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
+#bgImage {
+  width: 100%;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+@media (max-width: 1050px) {
+  #coursesBtns {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #coursesBtns {
+    width: 70%;
+  }
+}
+
+@media (max-width: 950px) {
+  #coursesSection {
+    width: 80%;
+  }
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  #coursesBtns {
+    width: 90%;
+  }
+
+  #coursesHolder {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+#coursesSection {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+  .coursesBtn{
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+#coursesHolder {
+  width: 95%;
+}
+  .courses{
+        font-size: 15px;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+  }
+
+}
+
+
+
+

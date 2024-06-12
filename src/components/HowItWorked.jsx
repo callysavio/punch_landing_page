@@ -14,7 +14,7 @@ function HowItWorked() {
       <div id={styles.worked}>
         <div className={styles.worked}>
           <div id={styles.wHeading}>
-            How it worked <br />
+            How it worked 
             for Jason <img src={jason} alt="jason" id={styles.jason} />
             at
           </div>

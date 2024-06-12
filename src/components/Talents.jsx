@@ -6,7 +6,6 @@ import iconThree from "../assets/images/find_icon3.svg";
 import exploreIcon from "../assets/images/explore_more.svg";
 import exploreIcon2 from "../assets/images/explore_more2.svg";
 import exploreIcon3 from "../assets/images/explore_more3.svg";
-
 import itIcon1 from "../assets/images/itIcon1.svg";
 import itIcon2 from "../assets/images/itIcon2.svg";
 import itIcon3 from "../assets/images/itIcon3.svg";

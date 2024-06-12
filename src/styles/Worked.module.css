@@ -1,106 +1,323 @@
-#workedSection{
-    width: 100%;
-    background-color: rgba(32, 34, 41, 1);
-    padding-bottom: 120px;
+#workedSection {
+  width: 100%;
+  background-color: rgba(32, 34, 41, 1);
+  padding-bottom: 120px;
 }
 
-#quote{
-    position: relative;
-    top: 0px;
-    left: 505px;
-    width: 221px;
-    height: 175px;
+#quote {
+  position: relative;
+  top: 0px;
+  left: 505px;
+  width: 221px;
+  height: 175px;
 }
 
 #worked {
-    width: 90%;
-    margin: auto;
-    display: flex;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.worked {
+  width: 45%;
+}
+
+.workedRight {
+  padding-top: 85px;
+}
+
+#wHeading {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+#jason {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  margin-left: 9px;
+  margin-right: 14px;
+}
+
+.groove {
+  position: relative;
+  left: -160px;
+  top: 18px;
+}
+
+.wPara {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: lightgrey;
+  margin-top: 50px;
+}
+
+#wImages {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.wRight {
+  display: flex;
+  gap: 20px;
+}
+
+.jWords {
+  text-align: left;
+  color: grey;
+}
+
+#jName {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  color: white;
+}
+
+#jTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+#jCountry {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+#jPara {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: lightgray;
+  margin-top: 50px;
+}
+
+/* responsive web design - media queries */
+
+@media (min-width: 1200px) {
+  #quote {
+    left: 485px;
+    width: 190px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 1150px) {
+  #quote {
+    left: 455px;
+  }
+
+  .groove {
+    left: -140px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #quote {
+    left: 400px;
+  }
+
+  .groove {
+    left: -130px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #quote {
+    left: 370px;
+  }
+
+  .groove {
+    left: -120px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .groove {
+    left: -105px;
+  }
+}
+
+@media (max-width: 950px) {
+  #quote {
+    left: 300px;
+  }
+
+  .groove {
+    left: -95px;
+  }
+}
+
+@media (max-width: 900px) {
+  .groove {
+    left: -85px;
+  }
+}
+
+@media (max-width: 850px) {
+  #wHeading {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 800px) {
+  #quote {
+    left: 260px;
+  }
+
+  .groove {
+    left: -65px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 750px) {
+  #quote {
+    width: 170px;
+    height: 150px;
+  }
+
+  #worked {
+    width: 80%;
     justify-content: space-between;
-    padding-top: 50px;
-}
+    padding-top: 10px;
+    flex-flow: column wrap;
+  }
 
-.worked{
-    width: 45%;
-}
+  .worked {
+    width: 100%;
+  }
 
-.workedRight{
-    padding-top: 85px;
-}
+  .groove {
+    top: -50px;
+    left: -145px;
+  }
 
-#wHeading{
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 64px;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-}
-
-#jason{
-    width: 57px;
-    height: 57px;
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    margin-left: 9px;
-    margin-right: 14px;
-}
-
-.groove{
-    position: relative;
-    left: -160px;
-    top: 18px;
-}
-
-.wPara{
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: left;
-        color: lightgrey;
-        margin-top: 50px;
-}
-
-#wImages{
-    display: flex;
-    margin-top: 40px;
-    gap: 20px;
-}
-
-.wRight{
-    display: flex;
-    gap: 20px;
-}
-
-.jWords{
-    text-align: left;
-    color: grey;
-}
-
-#jName{
-        font-size: 34px;
-        font-weight: 600;
-        line-height: 44px;
-        color: white;
-}
-
-#jTitle{
+  .wPara {
+    margin-top: 0px;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
+  }
 }
 
-#jCountry{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 38px;
+@media (max-width: 700px) {
+  .groove {
+    top: -50px;
+    left: -40px;
+  }
+}
+@media (max-width: 650px) {
+  .groove {
+    left: -30px;
+  }
 }
 
-#jPara{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    color: lightgray;
-    margin-top: 50px;
+@media (max-width: 600px) {
+  .groove {
+    left: -10px;
+  }
 }
+
+@media (max-width: 550px) {
+  #quote {
+    width: 150px;
+    height: 120px;
+    left: 180px;
+  }
+
+  #worked {
+    width: 90%;
+  }
+
+  .grooveLogo {
+    width: 70px;
+  }
+
+  .jWords {
+      text-align: left;
+      color: grey;
+  }
+
+  #jName {
+      font-size: 24px;
+  }
+
+  #jCountry, #jTitle {
+      font-size: 15px;
+  }
+
+  #jPara {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 40px;
+  }
+}
+
+@media(max-width: 500px){
+#quote{
+  left: 140px;
+}
+    #wHeading {
+        font-size: 34px;
+        line-height: 45px;
+      }
+
+      #jason{
+        width: 40px;
+        height: 40px;
+      }
+
+  .groove {
+      left: -100px;
+      top: -35px;
+      width: 150px;
+    }
+    
+}
+
+@media(max-width: 450px) {
+
+  .groove {
+    left: -20px;
+  }
+
+}
+
+@media(max-width: 400px) {
+
+  .groove {
+    left: 80px;
+    width: 100px;
+  }
+#quote {
+  left: 100px;
+}
+}
+
+@media(max-width: 350px) {
+
+  .groove {
+    left: 100px;
+    width: 100px;
+  }
+
+  #quote {
+    left: 100px;
+    width: 100px;
+    top: -17px;
+  }
+}
+

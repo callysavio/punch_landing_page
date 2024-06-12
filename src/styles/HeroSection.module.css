@@ -1,6 +1,6 @@
 #heroHeading {
   width: 50%;
-  margin-top: 140px;
+  margin-top: 210px;
   margin-left: auto;
   margin-right: auto;
   font-size: 54px;
@@ -46,7 +46,7 @@
   font-weight: 500;
   line-height: 16px;
   text-align: left;
-  color:rgba(32, 34, 41, 1);
+  color: rgba(32, 34, 41, 1);
 }
 
 #heroSearchIcon {
@@ -58,4 +58,58 @@
   border-radius: 15px;
   opacity: 0px;
   background-color: rgba(255, 190, 46, 1);
+}
+
+/* media query - responsive design */
+@media (max-width: 1050px) {
+  #heroHeading {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #heroHeading {
+    width: 80%;
+  }
+
+  .heroPara,
+  #heroSearchHolder {
+    width: 60%;
+  }
+}
+
+/* mobile */
+@media (max-width: 750px) {
+  .heroPara,
+  #heroSearchHolder {
+    width: 80%;
+  }
+}
+
+@media(max-width: 600px){
+  #heroHeading {
+      width: 90%;
+      font-size: 44px;
+        line-height: 54px;
+    }
+
+        .heroPara {
+          font-size: 20px;
+          line-height: 30px;
+        }
+}
+
+@media(max-width: 400px){
+  @media(max-width: 600px) {
+      #heroHeading {
+        font-size: 35px;
+        line-height: 44px;
+      }
+  
+      .heroPara {
+        font-size: 17px;
+        line-height: 30px;
+        width: 90%;
+      }
+    }
 }
