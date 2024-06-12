@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/HeroSection.module.css";
-import searchIcon from "../assets/images/searchIcon.png"
+import heroicon from "../assets/images/hero.svg";
 
 const HeroSection = () => {
   return (
@@ -25,11 +25,7 @@ const HeroSection = () => {
           type="text"
           placeholder="Looking for design |"
         />
-        <img
-          id={`${styles.heroSearchIcon}`}
-          alt="searchicon"
-          src={searchIcon}
-        />
+        <img id={`${styles.heroSearchIcon}`} alt="searchicon" src={heroicon} />
       </div>
     </div>
   );
