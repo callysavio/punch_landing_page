@@ -16,7 +16,7 @@ const initialState = {
       'Software Engineer',
       'Systems Architect',
     ],
-    'Design and Creative': [
+    'Design & Creative': [
       'Graphic Designer',
       'UI/UX Designer',
       'Motion Graphics Artist',
