@@ -36,9 +36,9 @@ const Courses = () => {
             className={`${styles.coursesBtn} ${styles.coursesBtn2} ${
               category === "Design and Creative" ? styles.active : ""
             }`}
-            onClick={() => handleCategoryChange("Design and Creative")}
+            onClick={() => handleCategoryChange("Design & Creative")}
           >
-            Design and Creative
+            Design & Creative
           </button>
         </div>
         <div id={styles.coursesHolder}>

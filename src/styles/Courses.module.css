@@ -96,9 +96,15 @@
 }
 
 /* mobile */
+
+@media (max-width: 750px) {
+.coursesBtn {
+    padding-right: 5px;
+  }
+}
 @media (max-width: 700px) {
   #coursesBtns {
-    width: 90%;
+    width: 95%;
   }
 
   #coursesHolder {
@@ -128,6 +134,16 @@
         width: 100%;
   }
 
+}
+
+@media(max-width: 400px){
+  .coursesBtn {
+      font-size: 14px;
+    }
+
+        .coursesBtn2 {
+          margin-left: -15px;
+        }
 }
 
 

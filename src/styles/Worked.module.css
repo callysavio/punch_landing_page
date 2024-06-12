@@ -219,9 +219,15 @@
     left: -40px;
   }
 }
+
+
 @media (max-width: 650px) {
   .groove {
     left: -30px;
+  }
+
+  #quote{
+    left: 100px;
   }
 }
 
