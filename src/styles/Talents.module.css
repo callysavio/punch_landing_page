@@ -64,7 +64,6 @@
   padding: 0px 24px 0px 25px;
   gap: 0px;
   border-radius: 30px;
-  opacity: 0px;
   background-color: rgba(32, 34, 41, 1);
 }
 
@@ -133,7 +132,6 @@
   height: 80px;
   padding: 22px 22px 22px 23px;
   border-radius: 74px;
-  opacity: 0px;
   background-color: rgba(246, 246, 246, 1);
 }
 
