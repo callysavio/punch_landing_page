@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/HeroSection.module.css";
-import search from "../assets/images/search.svg";
 
 const HeroSection = () => {
   return (
@@ -22,10 +21,14 @@ const HeroSection = () => {
       <div id={`${styles.heroSearchHolder}`}>
         <input
           id={`${styles.heroSearchBar}`}
-          tpe="text"
+          type="text"
           placeholder="Looking for design |"
         />
-        <img id={`${styles.heroSearchIcon}`} alt="search icon" src={search} />
+        <img
+          id={`${styles.heroSearchIcon}`}
+          alt="search icon"
+          src="/images/search.svg"
+        />
       </div>
     </div>
   );
