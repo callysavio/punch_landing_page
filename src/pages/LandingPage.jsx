@@ -19,7 +19,7 @@ const LandingPage = () => {
       <RecruitmentSteps />
       <WhyChoose />
       <FAQSection />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

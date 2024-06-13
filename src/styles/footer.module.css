@@ -74,11 +74,12 @@ h4 {
 }
 
 .footerMainLeftText {
-  font-size: 22px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   margin: 32px 0 64px 0;
-  line-height: 22px;
+  line-height: 30px;
   max-width: 284px;
+  text-align: left;
 }
 
 .linksAndRedirects span {
@@ -206,15 +207,19 @@ a {
     text-align: center;
   }
 
+  .footerMainRight h4{
+    margin-top: 50px;
+  }
+
   .footerMainLeftText {
     margin: 32px 0;
     font-size: 16px;
   }
 
   .links {
-    grid-template-columns: 1fr;
-    gap: 32px;
+      grid-template-columns: repeat(2, 1fr);
   }
+
 
   .linksAndRedirectsButtons {
     justify-content: center;
@@ -231,7 +236,7 @@ a {
   }
 }
 
-/* Adjustments for screens smaller than 600px */
+/* responsive designs for screens smaller than 600px */
 @media (max-width: 600px) {
   h4 {
     font-size: 36px;
@@ -240,11 +245,6 @@ a {
 
   .footerHeadInfo {
     max-width: 80%;
-  }
-
-  .footerMainLeftText {
-    font-size: 14px;
-    line-height: 18px;
   }
 
   .links ul {
