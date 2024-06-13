@@ -298,9 +298,9 @@ span {
   }
 
   #star2 {
-    right: -160px;
-    top: -10px;
-    width: 20px;
+    right: -320px;
+    top: -40px;
+    width: 40px;
   }
 
   .aText {
@@ -308,36 +308,91 @@ span {
   }
 
   #tInterview {
-    padding: 1px 2px;
+    padding: 2px 3px;
     font-size: 8px;
   }
 
         #arianaContainer {
-            right: -200px;
-            top: -55px;
+            right: -175px;
+            top: -50px;
             width: 65%;
         }
 
 }
 
-@media (max-width: 300px) {
-  .heading {
-    font-size: 20px;
-    line-height: 28px;
+@media(max-width: 350px){
+    #arianaContainer {
+        right: -175px;
+        top: -50px;
+        width: 70%;
+      }
+
+            #arianaImg {
+              width: 60%;
+              left: 20px;
+              position: relative;
+}
+
+#star2{
+  width: 30px;
+  left: 310px;
+}
+}
+
+@media(max-width: 300px) {
+  #arianaContainer {
+    right: -175px;
+    top: -50px;
+    width: 70%;
+  }
+
+  #arianaImg {
+    width: 60%;
+    left: 40px;
+    position: relative;
   }
 
   #star2 {
-    right: -110px;
-    top: 0;
-    width: 15px;
+    width: 30px;
+    left: 280px;
+    top: -50px;
   }
 
-  .aText {
-    font-size: 6px;
+  #aName{
+    font-size: 16px;
+  }
+}
+@media(max-width: 250px){
+  #mainContainer{
+    width: 100%;
+    padding-left: 5px;
   }
 
-  #tInterview {
-    padding: 1px 2px;
-    font-size: 7px;
-  }
+    .heading {
+      font-size: 30px;
+      line-height: 30px;
+
+    }
+  
+    .heading2 {
+      font-size: 25px;
+    }
+
+        #arianaContainer {
+          right: -135px;
+          top: -30px;
+          width: 80%;
+        }
+    
+  
+    
+        #star2 {
+          width: 30px;
+          left: 260px;
+          top: -50px;
+        }
+    
+        #aName {
+          font-size: 16px;
+        }
 }

@@ -26,11 +26,11 @@ const FAQSection = () => {
           </div>
           <div className={styles.bold} id={styles.single3}>
             <div></div>
-            <div>
+            <div id={styles.pProcess}>
               <h5 className={styles.boldText}>How does the payment work?</h5>
             </div>
             <div>
-              <img src={faqIcon} alt="Payment Process" />
+              <img src={faqIcon} alt="Payment Process" id={styles.pIcon} />
             </div>
           </div>
           <div id={styles.single4} className={styles.faqs}>

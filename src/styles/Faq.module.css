@@ -226,6 +226,10 @@
     .body {
         padding: 1rem;
     }
+
+        .questions {
+            width: 100%;
+        }
 }
 
 @media (max-width: 450px) {
@@ -297,5 +301,11 @@
     .font,
     .boldText {
         font-size: 0.55rem;
+    }
+}
+
+@media(max-width: 250px){
+    #pIcon{
+        border: 1px solid red;
     }
 }
