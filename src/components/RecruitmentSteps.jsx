@@ -1,8 +1,17 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleStep } from "../redux/actions/stepsActions";
 import styles from "../styles/Recruitment.module.css";
 import stepIcon from "../assets/images/stepIcon.svg";
 
 const RecruitmentSteps = () => {
+  const dispatch = useDispatch();
+  const steps = useSelector((state) => state.steps.steps);
+
+  const handleStepClick = (id) => {
+    dispatch(toggleStep(id));
+  };
+
   return (
     <div id={styles.mainSection}>
       <h1 id={styles.heading}>
@@ -15,70 +24,26 @@ const RecruitmentSteps = () => {
       </p>
 
       <div id={styles.steps}>
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <img src={stepIcon} alt="step icon" className={styles.stepIcon} />
-            <p className={styles.sPara}>
-              <b>Step 1:</b> Resume Screening
-            </p>
+        {steps.map((step) => (
+          <div key={step.id} className={styles.steps}>
+            <div
+              className={`${styles.step} ${step.active ? styles.active : ""}`}
+              onClick={() => handleStepClick(step.id)}
+            >
+              <img
+                src={stepIcon}
+                alt="step icon"
+                className={`${styles.stepIcon} ${
+                  step.active ? styles.activeIcon : ""
+                }`}
+              />
+              <p className={styles.sPara}>
+                <b>{step.title}</b>
+              </p>
+            </div>
+            {step.active && <p className={styles.sPara2}>{step.description}</p>}
           </div>
-          <p className={styles.sPara2}>
-            Candidates are assessed through skill based questions in a virtual
-            setting. Allowing you to gauge personality and cultural fit.{" "}
-          </p>
-        </div>
-
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <img src={stepIcon} alt="step icon" className={styles.stepIcon} />
-            <p className={styles.sPara}>
-              <b>Step 2:</b>Video Inteview
-            </p>
-          </div>
-          <p className={styles.sPara2}>
-            Candidates are assessed through skill based questions in a virtual
-            setting. Allowing you to gauge personality and cultural fit.{" "}
-          </p>
-        </div>
-
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <img src={stepIcon} alt="step icon" className={styles.stepIcon} />
-            <p className={styles.sPara}>
-              <b>Step 3:</b> Technical Evaluation
-            </p>
-          </div>
-          <p className={styles.sPara2}>
-            Candidates are assessed through skill based questions in a virtual
-            setting. Allowing you to gauge personality and cultural fit.{" "}
-          </p>
-        </div>
-
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <img src={stepIcon} alt="step icon" className={styles.stepIcon} />
-            <p className={styles.sPara}>
-              <b>Step 4:</b> Application Review
-            </p>
-          </div>
-          <p className={styles.sPara2}>
-            Candidates are assessed through skill based questions in a virtual
-            setting. Allowing you to gauge personality and cultural fit.{" "}
-          </p>
-        </div>
-
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <img src={stepIcon} alt="step icon" className={styles.stepIcon} />
-            <p className={styles.sPara}>
-              <b>Step 5:</b> Let's get to work
-            </p>
-          </div>
-          <p className={styles.sPara2}>
-            Candidates are assessed through skill based questions in a virtual
-            setting. Allowing you to gauge personality and cultural fit.{" "}
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );

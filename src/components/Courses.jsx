@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setCategory } from "../redux/actions";
+import { setCategory } from "../redux/actions/coursesActions";
 import styles from "../styles/Courses.module.css";
 import bgImage from "../assets/images/courses_bg.svg";
 
@@ -51,7 +51,7 @@ const Courses = () => {
           ))}
         </div>
       </div>
-      <img src={bgImage} alt="coursesimage" id={styles.bgImage} />
+      <img src={bgImage} alt="courses background" id={styles.bgImage} />
     </>
   );
 };

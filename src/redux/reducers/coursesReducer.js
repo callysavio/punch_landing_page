@@ -1,33 +1,17 @@
-import { SET_CATEGORY } from '../actions';
+import { SET_CATEGORY } from '../actions/coursesActions';
 
 const initialState = {
   category: 'IT & Development',
   courses: {
     'IT & Development': [
-      'Python Developer',
-      'Shopify Developer',
-      'MERN Stack Developer',
-      'Full Stack Developer',
-      'Data Scientist',
-      'Front End Developer',
-      'Backend Developer',
-      'DevOps Engineer',
-      'Mobile Developer',
-      'Software Engineer',
-      'Systems Architect',
+      'Python Developer', 'Shopify Developer', 'MERN Stack Developer', 'Full Stack Developer',
+      'Data Scientist', 'Front End Developer', 'Backend Developer', 'DevOps Engineer',
+      'AI/ML Engineer', 'Mobile Developer', 'Cyber Security Specialist',
     ],
     'Design & Creative': [
-      'Graphic Designer',
-      'UI/UX Designer',
-      'Motion Graphics Artist',
-      'Creative Director',
-      'Illustrator',
-      'Web Designer',
-      'Art Director',
-      'Visual Designer',
-      'Animation Designer',
-      'Brand Designer',
-      'Interaction Designer',
+      'Graphic Designer', 'UI/UX Designer', 'Product Designer', 'Creative Director',
+      'Illustrator', 'Animator', '3D Artist', 'Brand Strategist',
+      'Art Director', 'Web Designer', 'Video Editor',
     ],
   },
 };

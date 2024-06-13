@@ -1,9 +1,5 @@
-import { createStore, combineReducers } from 'redux';
-import coursesReducer from './reducers/coursesReducer';
-
-const rootReducer = combineReducers({
-  courses: coursesReducer,
-});
+import { createStore } from 'redux';
+import rootReducer from './reducers';
 
 const store = createStore(rootReducer);
 
