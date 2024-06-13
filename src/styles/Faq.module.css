@@ -1,0 +1,301 @@
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.body {
+    width: 100%;
+}
+
+.header {
+    margin-top: 5rem;
+    font-family: "Switzer", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+    text-align: center;
+}
+
+.questions {
+    margin-top: 5rem;
+}
+
+#single {
+    border: 1px solid #f3f3f3;
+}
+
+.firstQUestion {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.bold {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+    align-items: center;
+}
+
+.bold div {
+    padding: 1.8rem;
+}
+
+.three {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+}
+
+.three div {
+    border: 1px solid #f3f3f3;
+    padding: 1.8rem;
+}
+
+.firstQUestion div {
+    border: 1px solid #f3f3f3;
+    padding: 1.8rem;
+}
+
+.font {
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #202229;
+}
+
+.boldText {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #202229;
+}
+
+.faqs {
+    padding: 1.8rem;
+}
+
+#bg {
+    background-color: #e8e8e8;
+}
+
+/* Media Queries */
+
+/* Large screens */
+@media (max-width: 950px) {
+    .header {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1.3rem;
+    }
+
+    .firstQUestion,
+    .three {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        font-size: 2.8rem;
+        line-height: 3.75rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        font-size: 2.6rem;
+        line-height: 3.5rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 800px) {
+    .header {
+        font-size: 2.4rem;
+        line-height: 3.25rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+    .header {
+        font-size: 2rem;
+        line-height: 2.75rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1.05rem;
+    }
+
+    .firstQUestion,
+    .three {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.95rem;
+    }
+
+    .firstQUestion div,
+    .three div,
+    .faqs {
+        padding: 1.2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 550px) {
+    .header {
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.85rem;
+    }
+
+    .body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .header {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .header {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 200px) {
+    .header {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .font,
+    .boldText {
+        font-size: 0.55rem;
+    }
+}

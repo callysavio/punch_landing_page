@@ -24,6 +24,7 @@
   border: none;
   color: rgba(32, 34, 41, 1);
   transition: background-color 0.3s;
+  padding: 8px;
 }
 
 .coursesBtn:hover {
