@@ -7,7 +7,7 @@ const FAQSection = () => {
     <section id={styles.main} className={styles.main}>
       <div className={styles.body}>
         <div className={styles.header}>
-          <h1>Frequently asked questions</h1>
+          <h2>Frequently asked questions</h2>
         </div>
 
         <div className={styles.questions}>

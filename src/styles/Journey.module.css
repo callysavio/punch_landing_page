@@ -1,0 +1,950 @@
+#heading {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+}
+
+.heading2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  color: rgba(32, 34, 41, 1);
+}
+
+.jPara {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(32, 34, 41, 0.8);
+  margin-top: 10px;
+}
+
+#journeyHolder {
+  margin-top: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.journey {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(237, 239, 255, 1);
+  align-items: start;
+  padding: 20px;
+  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);
+}
+
+.number {
+  margin-top: 65px;
+}
+
+.words {
+  width: 40%;
+  text-align: left;
+  margin-top: 60px;
+}
+
+#joinNow {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+#joinNow p {
+  font-size: 14.8px;
+  font-weight: 500;
+  line-height: 12.11px;
+  text-align: left;
+  color: rgba(32, 34, 41, 1);
+}
+
+.joinIcon {
+  width: 50px;
+}
+
+.images {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.personContainer {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-bottom-left-radius: 21.15px;
+  border-bottom-right-radius: 21.15px;
+  padding-bottom: 20px;
+  box-shadow: 0px 21.15px 21.15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.personContainer2 {
+  height: 180px;
+  box-shadow: 0px 21.15px 21.15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.pTexts {
+  padding-left: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(32, 34, 41, 1);
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(32, 34, 41, 1);
+  margin-top: 20px;
+}
+
+.person1 {
+  background-color: rgba(255, 218, 206, 1);
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  margin-top: -20px;
+}
+
+#persons34 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+}
+
+.person2 {
+  background-color: rgba(200, 239, 196, 1);
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  margin-top: -20px;
+}
+
+#persons34 {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+}
+
+.person3 {
+  background-color: rgba(216, 210, 255, 1);
+  border-top-right-radius: 21.15px;
+  border-top-left-radius: 21.15px;
+  margin-top: 60px;
+}
+
+.person4 {
+  background-color: rgba(253, 221, 139, 1);
+  border-top-right-radius: 21.15px;
+  border-top-left-radius: 21.15px;
+}
+
+/* journey to your heart's content */
+.journey2 {
+  background-color: rgba(255, 247, 225, 1);
+}
+
+.personContainer3 {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 21.15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  margin-top: 6px;
+  box-shadow: 0px 21.15px 21.15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.p1 {
+  border: 3px solid rgba(216, 210, 255, 1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-top: 10px;
+}
+
+#pTop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.line1 {
+  background-color: rgba(216, 210, 255, 1);
+  width: 66.05px;
+  height: 10.08px;
+  border-radius: 10px;
+}
+
+.line2 {
+  background-color: rgba(216, 210, 255, 1);
+  width: 85.08px;
+  height: 8.96px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.line3 {
+  width: 152.25px;
+  height: 8.96px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 10px;
+}
+
+.line4 {
+  width: 171.28px;
+  height: 8.96px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.pBottom1 {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 7px;
+}
+
+.line11 {
+  background-color: rgba(200, 239, 196, 1);
+  width: 66.05px;
+  height: 10.08px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.line22 {
+  background-color: rgba(200, 239, 196, 1);
+  width: 85.08px;
+  height: 8.96px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.personContainer4 {
+  margin-top: -59px;
+  height: 255px;
+  box-shadow: 0px 21.15px 21.15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.personContainer5 {
+  height: 88px;
+}
+
+.line111 {
+  background-color: rgba(253, 221, 139, 1);
+  width: 66.05px;
+  height: 10.08px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.line222 {
+  background-color: rgba(253, 221, 139, 1);
+  width: 85.08px;
+  height: 8.96px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.p5 {
+  border: 3.2px solid rgba(253, 221, 139, 1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.personContainer6 {
+  width: 50%;
+  background-color: rgba(216, 210, 255, 1);
+  border-radius: 21px;
+  padding-bottom: 20px;
+  box-shadow: 0px 29.26px 58.51px 0px rgba(0, 0, 0, 0.05);
+  margin-top: -8px;
+}
+
+#bPerson {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.p3 {
+  border: 3px solid rgba(253, 221, 139, 1);
+  width: 55.03px;
+  height: 55.05px;
+  box-shadow: 0px 14.63px 29.26px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.aPaker {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(32, 34, 41, 1);
+  margin-top: 5px;
+}
+
+#leelar {
+  text-align: left;
+  color: rgba(30, 21, 21, 1);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.leelarImg {
+  width: 100%;
+  margin-top: -12px;
+}
+
+.leelarLogo {
+  position: absolute;
+  z-index: 999;
+  right: 70px;
+  width: 110px;
+  margin-top: 105px;
+}
+
+#x10 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  border-radius: 21px;
+  box-shadow: 0px 29.26px 58.51px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgba(200, 239, 196, 1);
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#x10 h1 {
+  font-size: 70px;
+  width: 137.66px;
+  height: 62.89px;
+  font-weight: 800;
+  color: rgba(32, 166, 125, 1);
+}
+
+#x10 p {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: left;
+  color: rgba(32, 166, 125, 1);
+  padding-top: 40px;
+}
+
+@media (max-width: 1100px) {
+  .p1 {
+    border: 2px solid rgba(216, 210, 255, 1);
+    width: 60px;
+    height: 60px;
+  }
+
+  #pTop {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .line1 {
+    width: 50px;
+    height: 8px;
+  }
+
+  .line2 {
+    width: 65px;
+    height: 8px;
+  }
+
+  .line3 {
+    width: 130px;
+    height: 8px;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+  }
+
+  .line4 {
+    width: 150px;
+    height: 8px;
+  }
+
+  .pBottom1 {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 7px;
+  }
+
+  .line11 {
+    width: 50px;
+    height: 8px;
+  }
+
+  .line22 {
+    width: 65px;
+    height: 8px;
+  }
+
+  .line111 {
+    width: 50px;
+    height: 8px;
+  }
+
+  .line222 {
+    width: 65px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .p1 {
+    width: 60px;
+    height: 60px;
+  }
+
+  #pTop {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .line1 {
+    width: 40px;
+    height: 8px;
+  }
+
+  .line2 {
+    width: 55px;
+    height: 8px;
+  }
+
+  .line3 {
+    width: 110px;
+  }
+
+  .line4 {
+    width: 120px;
+  }
+
+  .pBottom1 {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 7px;
+  }
+
+  .line11 {
+    width: 50px;
+    height: 8px;
+  }
+
+  .line22 {
+    width: 65px;
+    height: 8px;
+  }
+
+  .line111 {
+    width: 40px;
+    height: 6px;
+  }
+
+  .line222 {
+    width: 55px;
+    height: 6px;
+  }
+
+  .personContainer6 {
+    width: 45%;
+  }
+
+  .leelarLogo {
+    margin-top: 100px;
+  }
+
+  #x10 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .images {
+    width: 60%;
+    gap: 15px;
+    padding-right: 10px;
+  }
+
+  .p1 {
+    width: 55px;
+    height: 55px;
+  }
+
+  .number {
+    height: 50px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .line1 {
+    width: 35px;
+    height: 7px;
+  }
+
+  .line2 {
+    width: 50px;
+    height: 7px;
+  }
+
+  .line3 {
+    width: 100px;
+  }
+
+  .line4 {
+    width: 110px;
+  }
+
+  .line11 {
+    width: 35px;
+    height: 7px;
+  }
+
+  .line22 {
+    width: 50px;
+    height: 7px;
+  }
+
+  .line111 {
+    width: 35px;
+  }
+
+  .line222 {
+    width: 45px;
+  }
+
+  .p5 {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* mobile */
+@media (max-width: 750px) {
+  #heading {
+    font-size: 40px;
+  }
+
+  #journeyHolder {
+    margin-top: 20px;
+  }
+
+  .journey {
+    width: 90%;
+    flex-flow: column wrap;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .words {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .images {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding-right: 0px;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .personContainer {
+    width: 42%;
+    border-radius: 21.15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .person1 {
+    border-top-right-radius: 21.15px;
+    border-top-left-radius: 21.15px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .person2 {
+    border-top-right-radius: 21.15px;
+    border-top-left-radius: 21.15px;
+    border-bottom-left-radius: 0px;
+    padding-top: 20px;
+  }
+
+  .personContainer2 {
+    height: auto;
+  }
+
+  .person3 {
+    position: relative;
+    bottom: -10px;
+  }
+
+  .person4 {
+    background-color: rgba(253, 221, 139, 1);
+    border-top-right-radius: 21.15px;
+    border-top-left-radius: 21.15px;
+  }
+
+  .personContainer3 {
+    margin-top: -25px;
+  }
+
+  .personContainer5 {
+    margin-top: 30px;
+  }
+
+  #x10 {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .leelarLogo {
+    right: 80px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 700px) {
+  #x10 {
+    width: 87%;
+    position: relative;
+    bottom: -20px;
+    padding-bottom: 37px;
+  }
+}
+
+@media (max-width: 650px) {
+  .person3 {
+    bottom: -40px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .leelarLogo {
+    right: 67px;
+  }
+}
+
+@media (max-width: 550px) {
+  .images {
+    display: flex;
+    /* flex-flow: row nowrap; */
+    gap: 5px;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .personContainer {
+    width: 47%;
+  }
+
+  #persons34 {
+    gap: 10px;
+  }
+
+  .personContainer3 {
+    width: 47%;
+  }
+
+  .personContainer6 {
+    width: 47%;
+  }
+
+  #x10 h1 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  #x10 p {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 10px;
+    /* margin-bottom: 5px; */
+  }
+}
+
+@media (max-width: 500px) {
+  #heading {
+    font-size: 35px;
+  }
+  .journey {
+    width: 100%;
+  }
+  .personContainer {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .person4 {
+    display: none;
+  }
+
+  .personContainer2 {
+    margin-top: 30px;
+  }
+
+  .person3 {
+    margin-top: -30px;
+  }
+
+  .personContainer3 {
+    width: 100%;
+  }
+
+  .personContainer4 {
+    margin-top: 30px;
+  }
+
+  .line1 {
+    width: 180px;
+  }
+
+  .line2 {
+    width: 200px;
+  }
+
+  .line3 {
+    width: 290px;
+  }
+
+  .line4 {
+    width: 310px;
+  }
+
+  .line11 {
+    width: 180px;
+  }
+
+  .line22 {
+    width: 200px;
+  }
+
+  .line111 {
+    width: 290px;
+  }
+
+  .line222 {
+    width: 310px;
+  }
+
+  .number {
+    margin-top: 100px;
+  }
+
+  .personContainer6 {
+    width: 100%;
+  }
+
+  .leelarBg {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .leelarLogo {
+    right: 150px;
+    width: 150px;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  .leelarLogo {
+    right: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  #heading {
+    width: 90%;
+    line-height: 44px;
+    margin: auto;
+  }
+  .line1 {
+    width: 140px;
+  }
+
+  .line2{
+        margin-left: 10px;
+        width: 150px;
+  }
+
+  .line3 {
+    width: 90%;
+  }
+
+  .line4 {
+    width: 90%;
+  }
+
+  .line22 {
+    width: 90%;
+    margin-left: 40px;
+  }
+
+  .line111 {
+    width: 80%;
+  }
+
+  .line222 {
+    width: 90%;
+  }
+
+  .leelarLogo {
+    right: 100px;
+    margin-top: 180px;
+  }
+}
+
+@media(max-width: 350px){
+  .line11{
+    width: 120px;
+  }
+  .line22 {
+      width: 130px;
+      margin-left: 20px;
+    }
+}
+
+@media(max-width: 300px) {
+  .line1 {
+    width: 110px;
+  }
+
+  .line2 {
+    width: 120px;
+  }
+
+        .line11 {
+          width: 100px;
+        }
+    
+        .line22 {
+          width: 110px;
+        }
+
+                .leelarLogo {
+                  right: 80px;
+                  margin-top: 130px;
+                  width: 100px;
+                }
+}
+
+@media(max-width: 250px){
+  #heading {
+      width: 90%;
+      line-height: 40px;
+      margin: auto;
+      font-size: 30px;
+    }
+  .line1 {
+      width: 80px;
+    }
+  
+    .line2 {
+      width: 80px;
+    }
+  
+    .line11 {
+      width: 80px;
+    }
+  
+    .line22 {
+      width: 70px;
+    }
+  
+    .leelarLogo {
+      right: 55px;
+      margin-top: 110px;
+      width: 100px;
+    }
+
+    #x10 h1{
+      font-size: 20px;
+    }
+
+ #x10 p {
+   font-size: 18px;
+ }
+
+ .person3{
+  width: 60%;
+ }
+}
+
+@media(max-width: 200px){
+  .line1 {
+      width: 50px;
+    }
+  
+    .line2 {
+      width: 40px;
+    }
+  
+    .line11 {
+      width: 40px;
+    }
+  
+    .line22 {
+      width: 30px;
+      margin-left: 10px;
+    }
+
+    .line3{
+      width: 90px;
+    }
+
+        .line4 {
+          width: 80px;
+        }
+
+       .aPaker{
+        font-size: 16px;
+       }
+
+             .leelarLogo {
+               right: 55px;
+               margin-top: 70px;
+               width: 80px;
+             }
+}

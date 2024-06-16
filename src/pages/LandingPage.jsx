@@ -5,6 +5,7 @@ import Courses from "../components/Courses";
 import Talents from "../components/Talents";
 import HowItWorked from "../components/HowItWorked";
 import RecruitmentSteps from "../components/RecruitmentSteps";
+import Journey from "../components/Journey";
 import WhyChoose from "../components/WhyChoose";
 import FAQSection from "../components/Faq";
 import Footer from "../components/footer";
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <Talents />
       <HowItWorked />
       <RecruitmentSteps />
+      <Journey />
       <WhyChoose />
       <FAQSection />
       <Footer />

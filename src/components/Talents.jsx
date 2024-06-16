@@ -32,11 +32,11 @@ const Talents = () => {
             <ul className={styles.talentsUl}>
               <li>
                 <img src={iconOne} alt="icon" className={styles.talentsIcon} />
-                <span>989 Skills</span>
+                989 Skills
               </li>
               <li>
                 <img src={iconTwo} alt="icon" className={styles.talentsIcon} />
-                <span>45 Sub-Categories</span>
+                45 Sub-Categories
               </li>
               <li>
                 <img
