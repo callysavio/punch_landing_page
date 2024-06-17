@@ -238,7 +238,7 @@ span {
 }
 .prev{
  font-size: 22px;
- font-weight: 600;
+ font-weight: 700;
   cursor: pointer;
   color:#ffbe2e;
 }
@@ -247,6 +247,7 @@ span {
  cursor: pointer;
   font-size: 22px;
   color:#50589f;
+  font-weight: 700;
 }
 
 /* Media Queries */
