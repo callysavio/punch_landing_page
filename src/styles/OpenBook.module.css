@@ -161,6 +161,12 @@
   }
 }
 
+@media(max-width: 500px){
+  .secondCard .image1 {
+      left: -11rem;
+    }
+}
+
 @media (max-width: 450px) {
   .secondCard .image1 {
     left: -10rem;

@@ -15,17 +15,40 @@ import styles2 from "../styles/Why.module.css";
 
 function WhyChoose() {
   const [visibleSection, setVisibleSection] = useState("onBoard");
+  const [autoplay, setAutoplay] = useState(true); // State to control autoplay
 
   useEffect(() => {
     const sections = ["onBoard", "openBook", "loop"];
     let currentIndex = 0;
-    const interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % sections.length;
-      setVisibleSection(sections[currentIndex]);
-    }, 2000);
+    let intervalId = null;
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+    if (autoplay) {
+      intervalId = setInterval(() => {
+        currentIndex = (currentIndex + 1) % sections.length;
+        setVisibleSection(sections[currentIndex]);
+      }, 4000);
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId); // Cleanup interval on component unmount
+    };
+  }, [autoplay]);
+
+  const nextSlide = () => {
+    const sections = ["onBoard", "openBook", "loop"];
+    const currentIndex = sections.indexOf(visibleSection);
+    const nextIndex = (currentIndex + 1) % sections.length;
+    setVisibleSection(sections[nextIndex]);
+    setAutoplay(false); // Stop autoplay on manual slide change
+  };
+
+  const prevSlide = () => {
+    const sections = ["onBoard", "openBook", "loop"];
+    const currentIndex = sections.indexOf(visibleSection);
+    const prevIndex = (currentIndex - 1 + sections.length) % sections.length;
+    setVisibleSection(sections[prevIndex]);
+    setAutoplay(false); // Stop autoplay on manual slide change
+  };
 
   return (
     <div id={styles.mainContainer}>
@@ -35,6 +58,17 @@ function WhyChoose() {
           We take complex hiring processes - and simplify them. Connecting you
           to the world’s highly qualified talent pool.
         </p>
+      </div>
+      {/* Navigation Icons */}
+      <div id={styles.slideIcons}>
+        <i
+          className={`fa fa-angle-left ${styles.prev}`}
+          onClick={prevSlide}
+        ></i>
+        <i
+          className={`fa fa-angle-right ${styles.next}`}
+          onClick={nextSlide}
+        ></i>
       </div>
       <div
         className={`${styles.child2} ${styles.section} ${
@@ -86,7 +120,7 @@ function WhyChoose() {
           </div>
         </div>
       </div>
-      {/* second why -- child2 (open phone book) */}
+      {/* second why -- child2 (open book) */}
       <div
         className={`${styles2.child2} ${styles.section} ${
           visibleSection === "openBook" ? styles.visible : styles.hidden
