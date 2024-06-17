@@ -230,6 +230,12 @@
   }
 }
 
+@media (max-width: 610px) {
+  .groove {
+    left: -6px;
+  }
+}
+
 @media (max-width: 600px) {
   .groove {
     left: -10px;
