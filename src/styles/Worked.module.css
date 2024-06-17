@@ -392,3 +392,10 @@
        font-size: 14px;
      }
 }
+
+@media (max-width: 200px) {
+  .groove {
+    left: -5px;
+    top: -20px;
+  }
+}
