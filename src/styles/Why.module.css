@@ -33,14 +33,49 @@
   width: 65%;
   display: flex;
   justify-content: space-around;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   border-radius: 20px;
   box-shadow: 0px 15px 30px 0px rgba(191, 181, 255, 0.15);
-  padding: 10px;
+  padding: 15px;
+  display: none;
+}
+
+#loop {
+  display: none;
+  
+}
+
+#openBook{
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+  text-align: left;
+}
+
+.right {
+  width: 60%;
+  position: relative;
+}
+
+.right img {
+  width: 100%;
+  height: 400px;
 }
 
 .child {
   width: 50%;
+}
+
+.grn {
+  background-color: #c7f4c2;
+  width: 15px;
+  height: 4px;
+  border-radius: 20px;
 }
 
 #child {
@@ -181,6 +216,7 @@ span {
   color: rgba(255, 190, 46, 1) !important;
 }
 
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .heading {
@@ -260,6 +296,12 @@ span {
     right: -250px;
     top: -75px;
   }
+
+  .right{
+    margin-top: 30px;
+  }
+
+
 }
 
 @media (max-width: 550px) {
@@ -269,23 +311,20 @@ span {
 }
 
 @media (max-width: 500px) {
-    #star2 {
-        right: -400px;
-    }
+  #star2 {
+    right: -400px;
+  }
 }
 
-@media(max-width: 450px){
-
-    #star2 {
-            right: -350px;
-            top: -40px;
-        }
-    #arianaContainer {
-            right: -200px;
-            top: -55px;
-        }
-
-
+@media (max-width: 450px) {
+  #star2 {
+    right: -350px;
+    top: -40px;
+  }
+  #arianaContainer {
+    right: -200px;
+    top: -55px;
+  }
 }
 @media (max-width: 400px) {
   .heading {
@@ -293,7 +332,7 @@ span {
     line-height: 32px;
   }
 
-  .heading2{
+  .heading2 {
     font-size: 27px;
   }
 
@@ -312,34 +351,37 @@ span {
     font-size: 8px;
   }
 
-        #arianaContainer {
-            right: -175px;
-            top: -50px;
-            width: 65%;
+  #arianaContainer {
+    right: -175px;
+    top: -50px;
+    width: 65%;
+  }
+}
+
+@media (max-width: 350px) {
+  #arianaContainer {
+    right: -175px;
+    top: -50px;
+    width: 70%;
+  }
+
+  #arianaImg {
+    width: 60%;
+    left: 20px;
+    position: relative;
+  }
+
+  #star2 {
+    width: 30px;
+    left: 310px;
+  }
+
+        .right {
+          margin-top: 10px;
         }
-
 }
 
-@media(max-width: 350px){
-    #arianaContainer {
-        right: -175px;
-        top: -50px;
-        width: 70%;
-      }
-
-            #arianaImg {
-              width: 60%;
-              left: 20px;
-              position: relative;
-}
-
-#star2{
-  width: 30px;
-  left: 310px;
-}
-}
-
-@media(max-width: 300px) {
+@media (max-width: 300px) {
   #arianaContainer {
     right: -175px;
     top: -50px;
@@ -358,41 +400,42 @@ span {
     top: -50px;
   }
 
-  #aName{
+  #aName {
     font-size: 16px;
   }
+
+     .right {
+       margin-top: -25px;
+     }
 }
-@media(max-width: 250px){
-  #mainContainer{
+@media (max-width: 250px) {
+  #mainContainer {
     width: 100%;
     padding-left: 5px;
   }
 
-    .heading {
-      font-size: 30px;
-      line-height: 30px;
+  .heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
 
-    }
-  
-    .heading2 {
-      font-size: 25px;
-    }
+  .heading2 {
+    font-size: 25px;
+  }
 
-        #arianaContainer {
-          right: -135px;
-          top: -30px;
-          width: 80%;
-        }
-    
-  
-    
-        #star2 {
-          width: 30px;
-          left: 260px;
-          top: -50px;
-        }
-    
-        #aName {
-          font-size: 16px;
-        }
+  #arianaContainer {
+    right: -135px;
+    top: -30px;
+    width: 80%;
+  }
+
+  #star2 {
+    width: 30px;
+    left: 260px;
+    top: -50px;
+  }
+
+  #aName {
+    font-size: 16px;
+  }
 }

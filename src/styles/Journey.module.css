@@ -804,9 +804,9 @@
     width: 140px;
   }
 
-  .line2{
-        margin-left: 10px;
-        width: 150px;
+  .line2 {
+    margin-left: 10px;
+    width: 150px;
   }
 
   .line3 {
@@ -836,17 +836,17 @@
   }
 }
 
-@media(max-width: 350px){
-  .line11{
+@media (max-width: 350px) {
+  .line11 {
     width: 120px;
   }
   .line22 {
-      width: 130px;
-      margin-left: 20px;
-    }
+    width: 130px;
+    margin-left: 20px;
+  }
 }
 
-@media(max-width: 300px) {
+@media (max-width: 300px) {
   .line1 {
     width: 110px;
   }
@@ -855,96 +855,96 @@
     width: 120px;
   }
 
-        .line11 {
-          width: 100px;
-        }
-    
-        .line22 {
-          width: 110px;
-        }
+  .line11 {
+    width: 100px;
+  }
 
-                .leelarLogo {
-                  right: 80px;
-                  margin-top: 130px;
-                  width: 100px;
-                }
+  .line22 {
+    width: 110px;
+  }
+
+  .leelarLogo {
+    right: 80px;
+    margin-top: 130px;
+    width: 100px;
+  }
 }
 
-@media(max-width: 250px){
+@media (max-width: 250px) {
   #heading {
-      width: 90%;
-      line-height: 40px;
-      margin: auto;
-      font-size: 30px;
-    }
+    width: 90%;
+    line-height: 40px;
+    margin: auto;
+    font-size: 30px;
+  }
   .line1 {
-      width: 80px;
-    }
-  
-    .line2 {
-      width: 80px;
-    }
-  
-    .line11 {
-      width: 80px;
-    }
-  
-    .line22 {
-      width: 70px;
-    }
-  
-    .leelarLogo {
-      right: 55px;
-      margin-top: 110px;
-      width: 100px;
-    }
+    width: 80px;
+  }
 
-    #x10 h1{
-      font-size: 20px;
-    }
+  .line2 {
+    width: 80px;
+  }
 
- #x10 p {
-   font-size: 18px;
- }
+  .line11 {
+    width: 80px;
+  }
 
- .person3{
-  width: 60%;
- }
+  .line22 {
+    width: 70px;
+  }
+
+  .leelarLogo {
+    right: 55px;
+    margin-top: 110px;
+    width: 100px;
+  }
+
+  #x10 h1 {
+    font-size: 20px;
+  }
+
+  #x10 p {
+    font-size: 18px;
+  }
+
+  .person3 {
+    width: 60%;
+  }
 }
 
-@media(max-width: 200px){
+@media (max-width: 200px) {
   .line1 {
-      width: 50px;
-    }
-  
-    .line2 {
-      width: 40px;
-    }
-  
-    .line11 {
-      width: 40px;
-    }
-  
-    .line22 {
-      width: 30px;
-      margin-left: 10px;
-    }
+    width: 50px;
+  }
 
-    .line3{
-      width: 90px;
-    }
+  .line2 {
+    width: 40px;
+  }
 
-        .line4 {
-          width: 80px;
-        }
+  .line11 {
+    width: 40px;
+  }
 
-       .aPaker{
-        font-size: 16px;
-       }
+  .line22 {
+    width: 30px;
+    margin-left: 10px;
+  }
 
-             .leelarLogo {
-               right: 55px;
-               margin-top: 70px;
-               width: 80px;
-             }
+  .line3 {
+    width: 90px;
+  }
+
+  .line4 {
+    width: 80px;
+  }
+
+  .aPaker {
+    font-size: 16px;
+  }
+
+  .leelarLogo {
+    right: 55px;
+    margin-top: 70px;
+    width: 80px;
+  }
 }

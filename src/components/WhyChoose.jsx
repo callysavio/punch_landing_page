@@ -5,6 +5,9 @@ import learnIcon from "../assets/images/learnMoreIcon.svg";
 import arianaImg from "../assets/images/arianaImg.svg";
 import ariana from "../assets/images/ariana.svg";
 import star from "../assets/images/star.svg";
+import group from "../assets/images/group.svg";
+import OpenBook from "./OpenBook";
+
 // import style from "../styles/card.module.css";
 // import arr from "../assets/images/arr.svg";
 // import group from "../assets/images/group.svg";
@@ -62,11 +65,39 @@ function WhyChoose() {
               <div id={styles.tInterview}>Take Interview</div>
             </div>
           </div>
-              </div>
-              
-              
+        </div>
       </div>
-      
+      {/* second why -- child2 (open phone book) */}
+      <OpenBook />
+      {/* third why -- child2 (stay in the loop) */}
+      <div className={styles.child2} id={styles.loop}>
+        <div className={`${styles.left} ${styles.child}`}>
+          <h1 className={styles.heading2}>Stay in the loop.</h1>
+          <ul className={styles.whyUl}>
+            <li>
+              <p className={styles.grn}></p>
+              Track your staff activity down to every minute with screenshots.
+            </li>
+            <li>
+              <p className={styles.grn}></p>
+              Comprehensive timesheet data to process payments.
+            </li>
+            <li>
+              <p className={styles.grn}></p>
+              Create projects to organize and assign tasks more effectively.
+            </li>
+          </ul>
+          <div id={styles.learnMore}>
+            <img alt="whyIcon" className={styles.learnIcon} src={learnIcon} />
+            <p id={styles.learnMorePara}>Learn More</p>
+          </div>
+        </div>
+        <div className={`${styles.right} ${styles.child}`}>
+          <div>
+            <img src={group} alt="group" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
