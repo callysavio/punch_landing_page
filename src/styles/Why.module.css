@@ -1,6 +1,7 @@
 :root {
   --gradient-start: #50589f;
   --gradient-end: #ffbe2e;
+  --transition-duration: 1s;
 }
 
 #mainContainer {
@@ -9,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  height: 600px;
 }
 
 .heading {
@@ -27,26 +29,41 @@
 
 .child1 {
   width: 30%;
+  height: 500px;
 }
 
 .child2 {
   width: 65%;
-  display: flex;
   justify-content: space-around;
   flex-flow: row nowrap;
   border-radius: 20px;
-  box-shadow: 0px 15px 30px 0px rgba(191, 181, 255, 0.15);
+  box-shadow: 0px 15px 30px 0px rgba(191, 198, 209, 0.3);
   padding: 15px;
+}
+
+.section {
   display: none;
+  opacity: 0;
+  transition: opacity var(--transition-duration) ease-in-out;
+}
+
+.section.visible {
+  display: flex;
+  opacity: 1;
+}
+
+.section.hidden {
+  display: none;
+  opacity: 0;
 }
 
 #loop {
   display: none;
-  
+
 }
 
-#openBook{
-  display: flex;
+#openBook {
+  display: none;
 }
 
 .left {
@@ -143,11 +160,9 @@
 }
 
 #arianaImg {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%);
 
   border-radius: 8px;
   width: 55%;
@@ -231,11 +246,14 @@ span {
     flex-flow: column wrap;
     margin: auto;
     gap: 30px;
+    height: auto;
   }
 
   .child1 {
     width: 100%;
+    height: auto;
   }
+
   .child2 {
     width: 100%;
   }
@@ -250,6 +268,7 @@ span {
     width: 90%;
   }
 }
+
 @media (max-width: 800px) {
   #star2 {
     right: -340px;
@@ -279,6 +298,7 @@ span {
     top: -65px;
     width: 45px;
   }
+
   .child2 {
     flex-flow: column wrap;
   }
@@ -297,7 +317,7 @@ span {
     top: -75px;
   }
 
-  .right{
+  .right {
     margin-top: 30px;
   }
 
@@ -321,11 +341,13 @@ span {
     right: -350px;
     top: -40px;
   }
+
   #arianaContainer {
     right: -200px;
     top: -55px;
   }
 }
+
 @media (max-width: 400px) {
   .heading {
     font-size: 34px;
@@ -376,9 +398,9 @@ span {
     left: 310px;
   }
 
-        .right {
-          margin-top: 10px;
-        }
+  .right {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 300px) {
@@ -404,10 +426,11 @@ span {
     font-size: 16px;
   }
 
-     .right {
-       margin-top: -25px;
-     }
+  .right {
+    margin-top: -25px;
+  }
 }
+
 @media (max-width: 250px) {
   #mainContainer {
     width: 100%;

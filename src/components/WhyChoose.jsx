@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Why.module.css";
 import whyIcon from "../assets/images/whyIcon.svg";
 import learnIcon from "../assets/images/learnMoreIcon.svg";
@@ -6,13 +6,27 @@ import arianaImg from "../assets/images/arianaImg.svg";
 import ariana from "../assets/images/ariana.svg";
 import star from "../assets/images/star.svg";
 import group from "../assets/images/group.svg";
-import OpenBook from "./OpenBook";
-
-// import style from "../styles/card.module.css";
-// import arr from "../assets/images/arr.svg";
-// import group from "../assets/images/group.svg";
+import MessageBox from "./MessageBox";
+import styles3 from "../styles/OpenBook.module.css";
+import image1 from "../assets/images/msgImage1.svg";
+import image2 from "../assets/images/msgImage2.svg";
+import image3 from "../assets/images/msgImage3.svg";
+import styles2 from "../styles/Why.module.css";
 
 function WhyChoose() {
+  const [visibleSection, setVisibleSection] = useState("onBoard");
+
+  useEffect(() => {
+    const sections = ["onBoard", "openBook", "loop"];
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % sections.length;
+      setVisibleSection(sections[currentIndex]);
+    }, 2000);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
   return (
     <div id={styles.mainContainer}>
       <div className={styles.child1}>
@@ -22,7 +36,12 @@ function WhyChoose() {
           to the world’s highly qualified talent pool.
         </p>
       </div>
-      <div className={styles.child2}>
+      <div
+        className={`${styles.child2} ${styles.section} ${
+          visibleSection === "onBoard" ? styles.visible : styles.hidden
+        }`}
+        id="onBoard"
+      >
         <div className={styles.child}>
           <h1 className={styles.heading2}>Onboard without the risk.</h1>
           <ul className={styles.whyUl}>
@@ -59,7 +78,7 @@ function WhyChoose() {
             </div>
             <div id={styles.starHolder}>
               <div id={styles.star}>
-                <span>5.0</span> <i class="fa fa-star"></i>
+                <span>5.0</span> <i className="fa fa-star"></i>
                 <span>15</span>
               </div>
               <div id={styles.tInterview}>Take Interview</div>
@@ -68,9 +87,84 @@ function WhyChoose() {
         </div>
       </div>
       {/* second why -- child2 (open phone book) */}
-      <OpenBook />
+      <div
+        className={`${styles2.child2} ${styles.section} ${
+          visibleSection === "openBook" ? styles.visible : styles.hidden
+        }`}
+        id="openBook"
+      >
+        <div className={`${styles3.child}`}>
+          <h1 className={styles2.heading2}>
+            An open <br /> book.
+          </h1>
+          <ul className={styles2.whyUl}>
+            <li>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 18 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="18" height="7" rx="3.5" fill="#FFBE2E" />
+              </svg>
+
+              <p>Easy and transparent one-to-one chat with candidates.</p>
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 18 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="18" height="7" rx="3.5" fill="#FFBE2E" />
+              </svg>
+              Simple and convenient payment methods.
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 18 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="18" height="7" rx="3.5" fill="#FFBE2E" />
+              </svg>
+              Review past ratings.
+            </li>
+          </ul>
+          <div id={styles2.learnMore}>
+            <img alt="whyIcon" className={styles2.learnIcon} src={learnIcon} />
+            <p id={styles2.learnMorePara}>Learn More</p>
+          </div>
+        </div>
+
+        <div className={`${styles3.secondCard} ${styles2.child}`}>
+          <img src={image1} alt="image1" className={styles3.image1} />
+          <div>
+            <div className={styles3.msgBox}>
+              <MessageBox />
+              <img src={image2} alt="" className={styles3.image3} />
+            </div>
+            <div className={styles3.lastCard}>
+              <img src={image3} alt="" className={styles3.image2} />
+              <div className={styles3.msgText}>
+                <p>Hi Luis I am currently working as an expert at alfizo.org</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* third why -- child2 (stay in the loop) */}
-      <div className={styles.child2} id={styles.loop}>
+      <div
+        className={`${styles.child2} ${styles.section} ${
+          visibleSection === "loop" ? styles.visible : styles.hidden
+        }`}
+        id="loop"
+      >
         <div className={`${styles.left} ${styles.child}`}>
           <h1 className={styles.heading2}>Stay in the loop.</h1>
           <ul className={styles.whyUl}>
