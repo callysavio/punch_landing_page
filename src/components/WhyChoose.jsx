@@ -26,7 +26,7 @@ function WhyChoose() {
       intervalId = setInterval(() => {
         currentIndex = (currentIndex + 1) % sections.length;
         setVisibleSection(sections[currentIndex]);
-      }, 4000);
+      }, 2500);
     }
 
     return () => {

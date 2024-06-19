@@ -9,6 +9,24 @@
   text-align: center;
 }
 
+.pagesHeader{
+  margin-bottom: 110px;
+}
+
+.link{
+  font-size: 17px;
+  color:rgba(32, 34, 41, 1);
+}
+
+.linkPara{
+  margin-top: 20px;
+}
+
+
+.fa-arrow-left{
+  color: #50589f;
+}
+
 #heroIcon {
   width: 68px;
   height: 43px;

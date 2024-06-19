@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import styles from "../styles/Header.module.css";
 
@@ -14,23 +15,51 @@ const Header = () => {
   return (
     <div>
       <header id={styles.header}>
-        <img src={logo} alt="logo" id={styles.logo} />
+        <Link to="/">
+          <img src={logo} alt="logo" id={styles.logo} />
+        </Link>
         {/* Conditionally render the menu */}
         <div id={styles.navBar} className={isMenuVisible ? styles.visible : ""}>
           <ul id={styles.ul1}>
-            <li className={styles.li}>Find Work</li>
-            <li className={styles.li}>Find Talent</li>
-            <li className={styles.li}>Articles</li>
-            <li className={styles.li}>About Us</li>
-            <li className={styles.li}>Contact Us</li>
+            <li className={styles.li}>
+              <Link to="/find-work" onClick={toggleMenu}>
+                Find Work
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/find-talent" onClick={toggleMenu}>
+                Find Talent
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/articles" onClick={toggleMenu}>
+                Articles
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/about-us" onClick={toggleMenu}>
+                About Us
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link to="/contact-us" onClick={toggleMenu}>
+                Contact Us
+              </Link>
+            </li>
           </ul>
           <ul id={styles.ul2}>
             <li>
-              <button className={styles.headerBtn}>Log In</button>
+              <button className={styles.headerBtn}>
+                <Link to="/log-in" onClick={toggleMenu}>
+                  Log In
+                </Link>
+              </button>
             </li>
             <li>
               <button className={`${styles.headerBtn} ${styles.joinBtn}`}>
-                Join Now
+                <Link to="/sign-up" onClick={toggleMenu}>
+                  <p className={styles.jNow}>Join Now</p>
+                </Link>
               </button>
             </li>
           </ul>
